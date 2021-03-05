@@ -6,6 +6,8 @@ img {
   .container {
     position: relative;
     width: auto;
+    display: flex;
+    margin: auto;
   }
   
   /* Hide the images by default */
