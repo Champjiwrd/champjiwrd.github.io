@@ -21,8 +21,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-
-    </style>
+        .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+    }
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+      </style>
 </head>
 
 <body>
@@ -56,11 +68,18 @@
             <h2>Individual and Object Detection from CCTV</h2>
             <h4>Graduation Project , August 2020 - now</h4>
             <div class="h-50"></div>
-            <iframe id="frame" src="https://drive.google.com/file/d/1REI5FV4hpZMH_JZBzVjn2Ap_JpCeYN26/preview"
-                width="640" height="480"></iframe>
+            
+
+            <h3>Video Demo</h3>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9byI2kscYMM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
             <h3>Skill using</h3>
             <ul>
-                <li>Object Detection: You Only Look Once</li>
+                <li>Train model object Detection(YOLO: You Only Look Once) to find shirt in videos from CCTV</li>
                 <li>Color classification</li>
             </ul>
 
